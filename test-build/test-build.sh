@@ -4,7 +4,7 @@ cd ${WORKSPACE}/src
 docker build -t 192.168.0.15:5000/test/python-redis-demo:${BUILD_NUMBER} .
 #根据BUILD_NUMBER的变化创建一个新的容器镜像。
 
-docker push 192.168.180.0.15:5000/test/python-redis-demo:${BUILD_NUMBER}
+docker push 192.168.0.15:5000/test/python-redis-demo:${BUILD_NUMBER}
 #将容器镜像上传到Registry服务器上并重新命名。
 cd ${WORKSPACE}/test-build
 
